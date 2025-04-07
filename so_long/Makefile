@@ -2,7 +2,7 @@ CC			= gcc
 MINILIBX	= ./mlx/libmlx.a -lm
 NAME 		= so_long
 FLAGS		= -Wall -Wextra -Werror
-LFLAGS		= -framework OpenGL -framework AppKit
+LFLAGS = -lX11 -lXext -lGL -lm
 BNAME		= so_long_bonus
 SRCS 		= $(wildcard GAME/src/*.c)
 OBJS 		= $(SRCS:.c=.o)
